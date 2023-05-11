@@ -16,8 +16,8 @@ I am a recent computer science graduate from the Department of Computer Sciences
 - Relational Databases
 
 # News
-- May 7th, 2023: Learning about Apache Kafka - distributed big data streaming platform
-- May 5th, 2023: Reading about the exponential family in statistics
-- May 3rd, 2023: Exploring Graph Theory.
-- April 29th, 2023: Exploring Weak supervision in the context of regression.
+- **May 7th, 2023**: Learning about Apache Kafka - distributed big data streaming platform
+- **May 5th, 2023**: Reading about the exponential family in statistics
+- **May 3rd, 2023**: Exploring Graph Theory.
+- **April 29th, 2023**: Exploring Weak supervision in the context of regression.
 
