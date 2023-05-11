@@ -3,6 +3,7 @@ title: Home
 layout: home
 ---
 
+# Sui Jiet Tay
 <img src = "images/Me2.png" width = 200 align = "center">
 
 # About
