@@ -9,9 +9,8 @@ layout: home
 # About
 I am a recent computer science graduate from the Department of Computer Sciences at the University of Wisconsin Madison. I am currently an undergraduate researcher at WISCERS. My interest revolves broadly in machine learning and data science. Topics I am currently exploring include:
 
+- Zero-shot learning
 - Weak supervision
-- Graph Theory
-- Machine Teaching (Inverse machine learning problem)
 - Deep learning
 - Relational Databases
 
