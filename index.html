@@ -7,20 +7,35 @@
 </head>
 <body>
   <header>
-    <h1>Thoughts</h1>
-    <!--- <p class="subtitle">Short summaries + full LaTeX-rendered articles.</p> -->
+    <h1>Blog</h1>
+<!-- <p class="subtitle">
+</p>
+-->
   </header>
 
   <main class="post-grid">
     <!-- Post card 1 -->
     <article class="post-card">
-      <a href="posts/variance.html">
-        <img src="images/variance.png" alt="Variance illustration" class="post-thumb">
+      <a href="pdf/the_covariance_matrix/covariance_matrix.html">
+        <img src="images/gaussian_covariance_20x20.png" alt="Variance illustration" class="post-thumb">
         <h2>The Covariance Matrix</h2>
       </a>
       <p class="post-description">
-			abstract loading ...
-      </p>
+ The covariance matrix sits at the nexus of many foundational ideas in statistics and machine learning, spanning PCA, the multivariate Gaussian, Gaussian mixture models, and Gaussian processes. It remains prevalent even in the era of deep learning (for example, in techniques such as 3D Gaussian Splatting). Therefore, it is important to build intuition for what this mathematical object captures, as well as its strengths and weaknesses.     </p>
+    </article>
+
+    <!-- Post card 1 -->
+    <article class="post-card">
+      <a href="pdf/vectorized_formulations_of_deep_networks/vectorized_dn.html">
+        <img src="images/mlp.jpg" alt="MLP illustration" class="post-thumb">
+        <h2>Vectorized Formulations of Deep Networks</h2>
+      </a>
+      <p class="post-description">
+      A complex neural network computational graph can look intimidating, as tracing even a few layers quickly produces a massive expression that is hard to track. However, we can still express the system in a compact mathematical form for both inference and gradient calculation.
+
+In this writing, I show how, with the tools of linear algebra, we can derive clean expressions for inference and backpropagation. In particular, training a neural network by hand boils down to knowing (i) the explicit formulas for the four global gradients we care about, together with (ii) the corresponding local Jacobians that allow those global gradients to be propagated backward via the chain rule.
+
+With these in hand, we can execute one complete update cycle entirely by hand: one forward pass, zeroing out the gradients, one backward pass, and one optimization step.
     </article>
 
     <!-- Post card 2 -->

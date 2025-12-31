@@ -7,10 +7,31 @@ body {
 }
 
 header {
-  background: #111827;
+  position: relative;
   color: white;
   padding: 2rem 1.5rem;
   text-align: center;
+
+  /* banner image */
+  background-image: url("../images/surfaces.jpg"); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* dark overlay for readability */
+header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  pointer-events: none;
+}
+
+/* keep header content above overlay */
+header > * {
+  position: relative;
+  z-index: 1;
 }
 
 header h1 {
@@ -20,7 +41,7 @@ header h1 {
 
 header .subtitle {
   margin-top: 0.5rem;
-  color: #9ca3af;
+  color: #e5e7eb;
 }
 
 .post-grid {
@@ -36,13 +57,13 @@ header .subtitle {
   background: white;
   border-radius: 1rem;
   padding: 1rem;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
   transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 
 .post-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
 }
 
 .post-card a {
@@ -52,8 +73,11 @@ header .subtitle {
 
 .post-thumb {
   width: 100%;
+	width: 240px;/* fixed width */
   border-radius: 0.75rem;
   display: block;
+	height: auto;
+  margin: 0 auto 0.75rem; /* center horizontally + keep bottom spacing */
   margin-bottom: 0.75rem;
 }
 
@@ -66,6 +90,7 @@ header .subtitle {
   margin: 0;
   color: #4b5563;
   font-size: 0.95rem;
+  line-height: 1.45;
 }
 
 footer {
